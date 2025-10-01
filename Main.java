@@ -1,17 +1,17 @@
 public class Main {
 
-    static int N = 4; // Tamaño de la habitación 4x4
+    static int N = 4; 
     static int soluciones = 0;
 
     public static void main(String[] args) {
-        int[] tablero = new int[N]; // tablero[i] = columna de la fila i
+        int[] tablero = new int[N];
         colocar(0, tablero);
         System.out.println("Cantidad total de soluciones: " + soluciones);
     }
 
-    // Función recursiva para colocar elementos
+    
     public static void colocar(int fila, int[] tablero) {
-        if (fila == N) { // Si ya colocamos todos los elementos
+        if (fila == N) { 
             soluciones++;
             imprimirTablero(tablero);
             return;
